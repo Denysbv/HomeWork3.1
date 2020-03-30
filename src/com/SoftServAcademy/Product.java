@@ -42,9 +42,12 @@ public class Product {
         for (Product product : p) {
             if (topPrice < product.getPrice()) {
                 topPrice = product.getPrice();
-                if (product.getPrice() == topPrice) {
-                    System.out.println("Most expensive product is " + product.getName());
-                }
+            }
+        } System.out.println(topPrice);
+        for (Product product : p) {
+            if (product.getPrice() == topPrice) {
+                System.out.println("Most expensive product is " + product.getName() +
+                        "\nCurrently " + product.getQuantity() + " items available");
             }
         }
     }

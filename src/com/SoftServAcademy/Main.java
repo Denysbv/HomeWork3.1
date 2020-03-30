@@ -65,7 +65,7 @@ public class Main {
         printContinent("Norway");
         // #4
         Product product1 = new Product("Fish", 3, 33);
-        Product product2 = new Product("Meat", 10, 12);
+        Product product2 = new Product("Meat", 1000, 12);
         Product product3 = new Product("Milk", 99, 30);
         Product product4 = new Product("Chocolate", 40, 160);
         Product.mostExpensive(product1, product2, product3, product4);

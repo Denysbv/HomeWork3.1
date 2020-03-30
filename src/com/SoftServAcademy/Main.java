@@ -69,6 +69,7 @@ public class Main {
         Product product3 = new Product("Milk", 99, 30);
         Product product4 = new Product("Chocolate", 40, 160);
         Product.mostExpensive(product1, product2, product3, product4);
+        Product.mostAvailable(product1, product2, product3, product4);
 
     }
 }

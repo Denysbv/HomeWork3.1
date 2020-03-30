@@ -43,7 +43,7 @@ public class Product {
             if (topPrice < product.getPrice()) {
                 topPrice = product.getPrice();
             }
-        } System.out.println(topPrice);
+        } System.out.println(topPrice); //self check
         for (Product product : p) {
             if (product.getPrice() == topPrice) {
                 System.out.println("Most expensive product is " + product.getName() +
@@ -51,6 +51,21 @@ public class Product {
             }
         }
     }
+
+    public static void mostAvailable (Product... p) {
+        int topQuantity = 0;
+        for (Product product : p) {
+            if (topQuantity < product.getQuantity())  {
+                topQuantity = product.getQuantity();
+            }
+        } System.out.println(topQuantity); //self check
+        for (Product product : p) {
+            if (product.getQuantity() == topQuantity) {
+                System.out.println("Most available product is " + product.getName());
+            }
+        }
+    }
+
 
     @Override
     public boolean equals(Object o) {
